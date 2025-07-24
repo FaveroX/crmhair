@@ -109,3 +109,8 @@ $hook['post_controller'] = function () {
 if (file_exists(APPPATH . 'config/my_hooks.php')) {
     include_once APPPATH . 'config/my_hooks.php';
 }
+
+// Carregar hooks do sistema de revendedores
+if (file_exists(APPPATH . 'hooks/revendedores_hooks.php')) {
+    include_once APPPATH . 'hooks/revendedores_hooks.php';
+}
